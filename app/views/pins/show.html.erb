@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @pin.image %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pin.name %>
+</p>
+
+<p>
+  <strong>Process:</strong>
+  <%= @pin.process %>
+</p>
+
+<p>
+  <strong>Paper:</strong>
+  <%= @pin.paper %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @pin.year %>
+</p>
+
+<p>
+  <strong>Release date:</strong>
+  <%= @pin.release_date %>
+</p>
+
+<p>
+  <strong>Ebeans:</strong>
+  <%= @pin.ebeans %>
+</p>
+
+<p>
+  <strong>Paypal:</strong>
+  <%= @pin.paypal %>
+</p>
+
+<p>
+  <strong>Size:</strong>
+  <%= @pin.size %>
+</p>
+
+<p>
+  <strong>Run size:</strong>
+  <%= @pin.run_size %>
+</p>
+
+<%= link_to 'Edit', edit_pin_path(@pin) %> |
+<%= link_to 'Back', pins_path %>

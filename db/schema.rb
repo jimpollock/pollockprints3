@@ -11,7 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140425022703) do
+ActiveRecord::Schema.define(version: 20140425041457) do
+
+  create_table "pins", force: true do |t|
+    t.string   "image"
+    t.string   "name"
+    t.string   "process"
+    t.string   "paper"
+    t.string   "year"
+    t.date     "release_date"
+    t.string   "ebeans"
+    t.text     "paypal"
+    t.string   "size"
+    t.string   "run_size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
